@@ -1,13 +1,9 @@
-
-
 name: example-basic
 on:
   push:
     branches:
       - 'main'
 jobs:
-  # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cypress v9 and lower ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-
   basic-ubuntu-18:
     runs-on: ubuntu-18.04
     steps:
