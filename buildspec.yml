@@ -10,6 +10,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...    
       - aws s3 ls
+      - docker build -t test:latest .
        
   post_build:
     commands:
