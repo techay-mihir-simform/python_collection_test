@@ -8,7 +8,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo Building the Docker image...    
+      - echo Building the Docker image... 
+      - bash test.sh
       - aws s3 ls
       - docker build -t test:latest .
        
